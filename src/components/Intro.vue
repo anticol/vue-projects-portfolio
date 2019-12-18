@@ -27,11 +27,13 @@
 
 <style scoped>
     h1 {
-        font-family: 'Helvetica';
+        font-family: 'Ubuntu', sans-serif;
     }
 
     h3 {
         margin-bottom: 35px;
+        font-family: 'Ubuntu', sans-serif;
+
     }
 
     .intro-header img {

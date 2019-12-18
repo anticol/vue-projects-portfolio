@@ -1,7 +1,36 @@
 <template>
-
-    <!--// HE AND SHE-->
     <div class='portfolio'>
+
+
+    <!--// Daily UI-->
+        <div class='portfolio-item'>
+            <h3>Daily UI Challenge</h3>
+            <div>
+                <b-btn v-b-modal.modal019 variant="primary">
+                    <img src='../assets/daily-ui.jpg'/>
+                </b-btn>
+                <b-modal size="lg" id="modal019" title="Daily UI Challenge"
+                         ok-variant="primary" ok-title="Source Code and Applications"
+                         @ok="openURL('https://codepen.io/anticol/pens/tags?selected_tag=dailyui')">
+                    <p class="my-1">
+                    <ul class="short_description">
+                        <li><span class="li-header">When: </span> 11/2018 – 02/2020</li>
+                        <li><span class="li-header">Type: </span> Daily challenge</li>
+                        <li><span class="li-header">Technologies: </span>Vue.js, JavaScript, jQuerry, HTML5, CSS3, SAAS, LESS
+                        </li>
+                        <li><span class="li-header">My role: </span>Frontend developer
+                        </li>
+                    </ul>
+                    It was a perfect challenge to gain new skills in frontend developement. Every day I received email with description what to develop without graphical mockup, only text description. Mostly I was developing in Vue.js which allowed me to prepare components for future usage.
+
+                    </p>
+                </b-modal>
+            </div>
+            <p>It was a perfect challenge to gain new skills in frontend developement. Every day I received email with description what to develop without graphical mockup, only text description. Mostly I was developing in Vue.js which allowed me to prepare components for future usage.
+            </p>
+        </div>
+
+    <!--// VOLNY CAS V BRNE-->
 
         <div class='portfolio-item'>
             <h3>Free Time in Brno</h3>
@@ -28,8 +57,9 @@
                     </p>
                 </b-modal>
             </div>
-            <p>Web application mapping options of spending free time in Brno. It is a mashup application which collets
-                open data from different sources and shows them on the map.
+            <p>Web application mapping options of spending free time in Brno. It is a mashup application which collects
+                open data from different sources and shows them on the map. This application is made as a part of my
+                master thesis
 
             </p>
         </div>
@@ -55,6 +85,11 @@
                             testing, deployment, server customization, maintenance)
                         </li>
                     </ul>
+                    <a href="https://www.davidhorov.com/recommendationletters/lor-heandshe.pdf" target="_blank"
+                       style="text-decoration: none">
+                        <button type="button" class="btn btn-success">Recommendation letter from the CEO of HE&SHE s.r.o.
+                        </button>
+                    </a>
                     Creating a responsive eshop selling clothes and fashion accessories. Eshop is using
                     Woocommerce. I was customizing template, plugins and UI. Integrating external systems for
                     invoicing, transportation and paying with credit cards. Writing own scripts for email
@@ -64,7 +99,9 @@
                     </p>
                 </b-modal>
             </div>
-            <p>Responsive eshop selling clothes and fashion accessories.</p>
+            <p>Responsive e-commerce application selling clothes and fashion accessories. Integrating invoicing system,
+                payment gateway,
+                shipping restrictions, automated emails. Little bit of digital marketing has been done as well. </p>
         </div>
 
         <!--BMEDIC-->
@@ -135,7 +172,7 @@
                             testing, deployment, server customization, maintenance)
                         </li>
                     </ul>
-                    TODO
+                    Creating smart testing platform providing questions and answers.  Application is smart and remembers the answers of each student and consider that when choosing questions for students studying medicine, chemistry and physics. Administration interface for CRUD operations with questions was implemented as well.
 
                     <a href="https://www.davidhorov.com/recommendationletters/lor-bmedic-education.pdf" target="_blank"
                        style="text-decoration: none">
@@ -152,15 +189,16 @@
                     </p>
                 </b-modal>
             </div>
-            <p>TODO</p>
+            <p>Creating smart testing platform providing questions and answers.  Application is smart and remembers the answers of each student and consider that when choosing questions for students studying medicine, chemistry and physics. Administration interface for CRUD operations with questions was implemented as well.
+            </p>
         </div>
 
         <!--RESPONSIVE EMAILS-->
         <div class='portfolio-item'>
-            <h3>Responsive email templates</h3>
+            <h3>Email templates</h3>
             <div>
                 <b-btn v-b-modal.modal19 variant="primary">
-                    <img src='../assets/emails-main.jpg'/>
+                    <img src='../assets/emails-main2.jpg' height="180px" style="margin-bottom:10px"/>
                 </b-btn>
                 <b-modal size="lg" id="modal19" title="Responsive email templates">
                     <p class="my-1">
@@ -177,11 +215,15 @@
                             manager)
                         </button>
                     </a>
-                    <img src='../assets/emails-main.jpg'/>
+                    <img src='../assets/emails-main2.jpg'/>
                     </p>
                 </b-modal>
             </div>
-            <p>Implementing responsive emails from PSD template.</p>
+            <p>Implementing responsive emails templates.
+                Converting designed PSD files (newsletters, promotions, holiday season sales, confirmation of orders)
+                into interactive emails
+                pixel by pixel. The main focus was to preserve orginal design and make templates work on every device.
+            </p>
         </div>
 
         <!--RIESIME FINANCIE-->
@@ -204,6 +246,11 @@
                             testing, deployment, server customization, maintenance)
                         </li>
                     </ul>
+                    <a href="https://www.davidhorov.com/recommendationletters/lor-riesime-financie.pdf" target="_blank"
+                       style="text-decoration: none">
+                        <button type="button" class="btn btn-success">Recommendation letter from Ing. Denis Staník
+                        </button>
+                    </a>
                     Creating responsive company website providing insurance and investment services. Website is
                     using WordPress as main CMS system. During several meetings we have created an idea for this
                     website from scratch. We defined features, which were implemented and regularly discussed.
@@ -211,7 +258,8 @@
                     </p>
                 </b-modal>
             </div>
-            <p>Responsive company website providing insurance and investment services.</p>
+            <p>Creating responsive company website providing insurance and investment services. Website is
+                using WordPress as main CMS system. We defined features, which were implemented and regularly discussed.</p>
         </div>
 
         <!--IBS SECURITY-->
@@ -239,7 +287,9 @@
                     </p>
                 </b-modal>
             </div>
-            <p>Responsive company website providing security services.</p>
+            <p>Responsive website for the company IBS Security, which provides security services. Customer´s needs were
+                transfered from PSD templates into responsive website and implementation was done using agile
+                methodologies</p>
         </div>
 
         <!--DavidHorov-->
@@ -266,7 +316,9 @@
                     </p>
                 </b-modal>
             </div>
-            <p>Responsive personal portfolio webpage </p>
+            <p>My personal portfolio responsive webpage. This site is used to demonstrate my skills and abilities. Part
+                with the projects porfolio was done in Vue.js to demonstrate ability to develop applications in this
+                framework. </p>
         </div>
 
         <!--NOVELTY-->
@@ -274,7 +326,7 @@
             <h3>Novelty</h3>
             <div>
                 <b-btn v-b-modal.modal4 variant="primary">
-                    <img src='../assets/novelty-main.png'/>
+                    <img src='../assets/novelty-main.png' style="margin-bottom: 10px;"/>
                 </b-btn>
                 <b-modal size="lg" id="modal4" title="Novelty"
                          ok-variant="primary" ok-title="Source Code"
@@ -305,7 +357,8 @@
                 </b-modal>
             </div>
             <p>Web applications Novelty aims to create the news application for people with impaired vision and hearing,
-                and to provide the integration into the Application As A Service. </p>
+                and to provide the integration into the Application As A Service. This application was awarded by IBM
+                and won the first place during the presentation at IBM Brno.</p>
         </div>
 
         <!--ANIMEFEST-->
@@ -313,7 +366,7 @@
             <h3>Animefest panel</h3>
             <div>
                 <b-btn v-b-modal.modal5 variant="primary">
-                    <img src='../assets/animefest-main.png'/>
+                    <img src='../assets/animefest-main.png' style="margin-top:-7px"/>
                 </b-btn>
                 <b-modal size="lg" id="modal5" title="Animefest panel"
                          ok-variant="primary" ok-title="Source Code"
@@ -343,7 +396,9 @@
                 </b-modal>
             </div>
             <p>Web application consisting of information screen and administration panel for the festival
-                Animefest.cz.</p>
+                Animefest.cz. Multiple features were implemented  - displaying the current program fetched from XML,
+                pictures from Instagram, administration
+                interface, iframes and news ticker.</p>
         </div>
 
         <!--SOURCE CODE INSPECTOR-->
@@ -382,7 +437,7 @@
                 </b-modal>
             </div>
             <p>Command line automated bash script which searchers for specific errors and programming mistakes in C/C++
-                source codes.</p>
+                source codes. This application was implemented as a part of my bachelor thesis.</p>
         </div>
 
         <!--MARKIZA-->
@@ -416,7 +471,7 @@
                 </b-modal>
             </div>
             <p>HbbTV application for the most popular commercial TV in Slovakia. Displays news, weather information,
-                teletext and contains video archive and interactive games. </p>
+                teletext and contains video archive and interactive games. My developement mostly focused on games. </p>
         </div>
 
         <!--YOUSEE-->
@@ -453,7 +508,7 @@
                 </b-modal>
             </div>
             <p>Application for Samsung and LG TV platforms. YouSee is the largest quadruple play service provider in
-                Denmark. The features and functionality of this app is similar to Netflix</p>
+                Denmark. The features and functionality of this app is similar to Netflix. I was doing front-end develpement and analysis, documentation of provided API.</p>
         </div>
 
         <!--O2 TV SPORT-->
@@ -461,7 +516,7 @@
             <h3>O2 TV Sport</h3>
             <div>
                 <b-btn v-b-modal.modal9 variant="primary">
-                    <img src='../assets/o2-main.png'/>
+                    <img src='../assets/o2-main.png' style="margin-top:-5px"/>
                 </b-btn>
                 <b-modal size="lg" id="modal9" title="O2 TV Sport"
                          ok-variant="primary" ok-title="More Information"
@@ -600,5 +655,19 @@
         margin-top: 15px;
         margin-bottom: 25px;
         display: block;
+    }
+
+    p {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    h3 + div + p {
+        margin-top: 15px;
+        line-height: 1.2;
+        text-align: justify;
+    }
+
+    .portfolio-item h3 {
+        text-align: center;
     }
 </style>

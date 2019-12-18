@@ -22,7 +22,7 @@
                 skills: [
                     {skillName: 'JavaScript'},
                     {skillName: 'HTML5'},
-                    {skillName: 'CSS/SASS'},
+                    {skillName: 'CSS3/SASS'},
                     {skillName: 'Vue.js'},
                     {skillName: 'PHP'},
                     {skillName: 'Python'},
@@ -46,8 +46,9 @@
         margin: 5px;
         padding: 10px;
         border-radius: 15px;
-        font-family: 'Cambria';
+        font-family: monospace;
         background: #267adb;
+        font-size: 15px;
         color: #ffffff;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -60,6 +61,7 @@
 
     .features-section li {
         background: darkgreen;
+        font-family: 'Cambria';
     }
 
     .features-section {
