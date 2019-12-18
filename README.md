@@ -1,6 +1,6 @@
 # Vue-Portfolio
 
-> A portfolio page created with Vue.js
+> My personal portfolio page contaning main project created with Vue.js
 
 ## Build Setup
 
